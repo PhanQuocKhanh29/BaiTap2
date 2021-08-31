@@ -14,11 +14,11 @@ namespace BaiTap2.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult GPT(string soA, string soB)
+        public ActionResult GPT(string soX, string soY)
         {
-            double so1 = Convert.ToDouble(soA);
-            double so2 = Convert.ToDouble(soB);
-            double ketqua = -so2 / so1;
+            double soa = Convert.ToDouble(soX);
+            double sob = Convert.ToDouble(soY);
+            double ketqua = -sob / soa;
             ViewBag.Giaipt = ketqua;
             return View();
         }
