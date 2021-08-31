@@ -10,7 +10,7 @@ namespace BaiTap2.Models
         public double GPT(double x, double y)
         {
             double GPT = 0;
-            GPT = -x / y;
+            GPT = -y / x;
             return GPT;
         }
     }

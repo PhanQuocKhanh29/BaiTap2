@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+
 namespace BaiTap2.Controllers
 {
     public class DemoBT2Controller : Controller
@@ -14,11 +15,11 @@ namespace BaiTap2.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult GPT(string soX, string soY)
+        public ActionResult GPT(string soA, string soB)
         {
-            double soa = Convert.ToDouble(soX);
-            double sob = Convert.ToDouble(soY);
-            double ketqua = -sob / soa;
+            double so1 = Convert.ToDouble(soA);
+            double so2 = Convert.ToDouble(soB);
+            double ketqua = -so2 / so1;
             ViewBag.Giaipt = ketqua;
             return View();
         }
