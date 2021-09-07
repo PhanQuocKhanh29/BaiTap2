@@ -5,7 +5,7 @@ using System.Web;
 
 namespace BaiTap2.Models
 {
-    public class BaiTap2
+    public class GiaiPhuongTrinh
     {
         public double GPT(double x, double y)
         {
