@@ -132,8 +132,18 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202109210102251_IntialCreate.cs" />
+    <Compile Include="Migrations\202109210102251_IntialCreate.designer.cs">
+      <DependentUpon>202109210102251_IntialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109210135283_Khachhang_table.cs" />
+    <Compile Include="Migrations\202109210135283_Khachhang_table.designer.cs">
+      <DependentUpon>202109210135283_Khachhang_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\BaiTap2.cs" />
+    <Compile Include="Models\KhachHang.cs" />
     <Compile Include="Models\LTQLDbContext.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -191,6 +201,14 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202109210102251_IntialCreate.resx">
+      <DependentUpon>202109210102251_IntialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109210135283_Khachhang_table.resx">
+      <DependentUpon>202109210135283_Khachhang_table.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -6,10 +6,10 @@ using System.Web;
 
 namespace BaiTap2.Models
 {
-    public class Account
+    public class KhachHang
     {
         [Key]
-        public string Username { get; set; }
-        public string Password { get; set; }
+        public string TenKH { get; set; }
+        public string MaKH { get; set; }
     }
 }
