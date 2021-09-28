@@ -9,7 +9,9 @@ namespace BaiTap2.Models
     public partial class LTQLDbContext : DbContext
 
     {
-        public LTQLDbContext() : base("name=LTQLDbContext")
+        private const string NameOrConnectionString = "name=LTQLDbContext";
+
+        public LTQLDbContext() : base(NameOrConnectionString)
         {
         }
         public virtual DbSet<Account> Accounts { get; set; }

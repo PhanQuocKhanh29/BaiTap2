@@ -11,10 +11,10 @@
                 "dbo.KhachHangs",
                 c => new
                     {
-                        TenKH = c.String(nullable: false, maxLength: 128),
-                        MaKH = c.String(unicode: false),
+                        MaKH = c.String(nullable: false, maxLength: 128),
+                        TenKH = c.String(unicode: false),
                     })
-                .PrimaryKey(t => t.TenKH);
+                .PrimaryKey(t => t.MaKH);
             
             AddColumn("dbo.Students", "Address", c => c.String());
         }

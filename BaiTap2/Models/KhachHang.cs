@@ -11,7 +11,8 @@ namespace BaiTap2.Models
     public class KhachHang
     {
         [Key]
-        public string TenKH { get; set; }
         public string MaKH { get; set; }
+        public string TenKH { get; set; }
+        public string Diachi { get; set; }
     }
 }
