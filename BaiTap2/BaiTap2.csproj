@@ -129,6 +129,7 @@
     <Compile Include="Controllers\DemoBT2Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KhachHangs1Controller.cs" />
+    <Compile Include="Controllers\PeopleController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -144,11 +145,16 @@
     <Compile Include="Migrations\202109280245545_Alter_Table_PrimaryKey_MaKH.Designer.cs">
       <DependentUpon>202109280245545_Alter_Table_PrimaryKey_MaKH.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202110260026172_Person_Table.cs" />
+    <Compile Include="Migrations\202110260026172_Person_Table.Designer.cs">
+      <DependentUpon>202110260026172_Person_Table.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\BaiTap2.cs" />
     <Compile Include="Models\KhachHang.cs" />
     <Compile Include="Models\LTQLDbContext.cs" />
+    <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Process1\StringProcess1.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -189,12 +195,16 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\DemoBT2\GPT.cshtml" />
     <Content Include="Views\KhachHangs1\Create.cshtml" />
     <Content Include="Views\KhachHangs1\Delete.cshtml" />
     <Content Include="Views\KhachHangs1\Details.cshtml" />
     <Content Include="Views\KhachHangs1\Edit.cshtml" />
     <Content Include="Views\KhachHangs1\Index.cshtml" />
+    <Content Include="Views\People\Create.cshtml" />
+    <Content Include="Views\People\Delete.cshtml" />
+    <Content Include="Views\People\Details.cshtml" />
+    <Content Include="Views\People\Edit.cshtml" />
+    <Content Include="Views\People\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -221,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202109280245545_Alter_Table_PrimaryKey_MaKH.resx">
       <DependentUpon>202109280245545_Alter_Table_PrimaryKey_MaKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110260026172_Person_Table.resx">
+      <DependentUpon>202110260026172_Person_Table.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -17,6 +17,7 @@ namespace BaiTap2.Models
         public virtual DbSet<Account> Accounts { get; set; }
         public virtual DbSet<Student> Students { get; set; }
         public virtual DbSet<KhachHang> KhachHangs { get; set; }
+        public virtual DbSet<Person> People { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Account>()
